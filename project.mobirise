@@ -44,7 +44,7 @@
     "noImageResize": null,
     "gdpr": false,
     "google-analytics": "",
-    "siteUrl": "https://www.pietercooreman.be",
+    "siteUrl": "https://pietercooreman.be",
     "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
     "robotsSwitcher": "on",
     "sitemapSwitcherAuto": "on",
@@ -68,7 +68,7 @@
       "textButton": "Akkoord"
     },
     "pwa-switcher": false,
-    "imageResize": false
+    "imageResize": true
   },
   "pages": {
     "index.html": {
