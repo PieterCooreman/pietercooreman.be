@@ -716,6 +716,10 @@ section.lazy-placeholder:after {
 .cid-rFw34uyVMp H1 {
   text-align: left;
 }
+.cid-rFw34uyVMp .mbr-text,
+.cid-rFw34uyVMp .mbr-section-btn {
+  text-align: left;
+}
 .cid-sa03cpF6pK {
   padding-top: 75px;
   padding-bottom: 75px;
