@@ -6,7 +6,7 @@
       "name": "mobirise4",
       "title": "Mobirise 4",
       "styling": {
-        "primaryColor": "#4267b2",
+        "primaryColor": "#cc2952",
         "secondaryColor": "#ff3366",
         "successColor": "#F7ED4A",
         "infoColor": "#82786E",
@@ -45,7 +45,7 @@
         "url": "https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700"
       }
     ],
-    "uniqCompNum": 4,
+    "uniqCompNum": 6,
     "versionPublish": "4.12.4",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/favicon-60x53-1.png",
@@ -93,13 +93,141 @@
             }
           },
           "_name": "header2",
-          "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n         'mbr-fullscreen': fullScreen,\n         'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/img-7629-2000x1392.jpg\" parallax selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#073B4C\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n                    Pieter Cooreman zingt voortaan in 't schoon Vlaams</h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Beautiful mobile websites\n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Pieter Cooreman zet zijn bariton in om zijn muzikale motto 'drie akkoorden en de waarheid' kracht bij te zetten, in het Nederlands. Hij steekt grote country-hits van de nieuwe golf mega-sterren uit Nashville in een nieuw, Nederlandstalig jasje. Door de vertaling gaan de oprechte, soms rauwe songs recht naar het hart.\nVerwacht je aan sfeervolle, indringende vertolkingen, afgewisseld met eigen, fijnzinnige werkjes.</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-secondary\" href=\"https://www.youtube.com/user/petecorman\" data-app-placeholder=\"Type Text\" target=\"_blank\"><span class=\"socicon socicon-youtube mbr-iconfont mbr-iconfont-btn\"></span>YouTube</a>\n                    <a class=\"btn btn-md btn-primary\" href=\"https://www.facebook.com/CooremanPieter/\" data-app-placeholder=\"Type Text\" target=\"_blank\"><span class=\"socicon socicon-facebook mbr-iconfont mbr-iconfont-btn\"></span>Facebook</a> <a class=\"btn btn-md btn-white\" href=\"index.html#extForm24-2\" data-app-placeholder=\"Type Text\"><span class=\"mbri-mobile mbr-iconfont mbr-iconfont-btn\"></span>Contact</a></div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n         'mbr-fullscreen': fullScreen,\n         'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/img-7629-2000x1392.jpg\" parallax selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#073B4C\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n                    Pieter Cooreman zingt voortaan in 't schoon Vlaams</h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Beautiful mobile websites\n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Pieter Cooreman zet zijn bariton in om zijn muzikale motto 'drie akkoorden en de waarheid' kracht bij te zetten, in het Nederlands. Hij steekt grote country-hits van de nieuwe golf mega-sterren uit Nashville in een nieuw, Nederlandstalig jasje. Door de vertaling gaan de oprechte, soms rauwe songs recht naar het hart.\nVerwacht je aan sfeervolle, indringende vertolkingen, afgewisseld met eigen, fijnzinnige werkjes.</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-secondary\" href=\"https://www.youtube.com/user/petecorman\" data-app-placeholder=\"Type Text\" target=\"_blank\"><span class=\"socicon socicon-youtube mbr-iconfont mbr-iconfont-btn\"></span>YouTube</a>\n                    <a class=\"btn btn-md btn-danger\" href=\"https://www.facebook.com/CooremanPieter/\" data-app-placeholder=\"Type Text\" target=\"_blank\"><span class=\"socicon socicon-facebook mbr-iconfont mbr-iconfont-btn\"></span>Facebook</a> <a class=\"btn btn-md btn-white\" href=\"index.html#extForm24-2\" data-app-placeholder=\"Type Text\"><span class=\"mbri-mobile mbr-iconfont mbr-iconfont-btn\"></span>Contact</a></div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
           "_cid": "rFw34uyVMp",
           "_anchor": "header2-1",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "alias": "mobirise4-blocks/components",
+          "_isSecondary": true,
+          "typeCompatible": "type",
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".box1": {
+              "background-image": "url(@video1)",
+              "background-size": "cover",
+              "background-position": "center",
+              "height": "400px",
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center",
+              "margin": "auto"
+            },
+            ".box2": {
+              "background-image": "url(@video2)",
+              "background-size": "cover",
+              "background-position": "center",
+              "height": "400px",
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center",
+              "margin": "auto"
+            },
+            ".icon-wrap": {
+              "background-color": "@iconBGColor !important",
+              "border-radius": "50%",
+              "width": "80px",
+              "height": "80px",
+              "margin": "auto",
+              "display": "flex",
+              "justify-content": "center",
+              "align-items": "center",
+              "transition": "all 0.3s",
+              "&:hover": {
+                "transform": "scale(1.1)"
+              }
+            },
+            ".icon-wrap span": {
+              "padding-left": "8px"
+            },
+            ".mbr-media span": {
+              "font-size": "30px",
+              "cursor": "pointer",
+              "position": "relative",
+              "display": "inline-block",
+              "transition": "all 0.25s",
+              "color": "@iconColor !important",
+              "&.mbri-play:before": {
+                "position": "absolute",
+                "left": "50%",
+                "-webkit-transform": "translateX(-35%)",
+                "-moz-transform": "translateX(-35%)",
+                "-ms-transform": "translateX(-35%)",
+                "-o-transform": "translateX(-35%)",
+                "transform": "translateX(-35%)"
+              }
+            },
+            ".modalWindow": {
+              "position": "fixed",
+              "z-index": "5000",
+              "left": "0",
+              "top": "0",
+              "background-color": "rgba(61, 61, 61, 0.65)",
+              "width": "100%",
+              "height": "100%",
+              ".modalWindow-container": {
+                "transform": "translateY(50vh) translateY(-22vw)"
+              },
+              ".modalWindow-video": {
+                "height": "(80vw / 1.778)",
+                "width": "80vw",
+                "margin": "0 auto"
+              }
+            },
+            "a.close": {
+              "position": "absolute",
+              "right": "4vw",
+              "top": "4vh",
+              "color": "#ffffff",
+              "z-index": "5000000",
+              "font-size": "37px",
+              "background": "#000",
+              "padding": "20px",
+              "border-radius": "50%",
+              "&:hover": {
+                "color": "#ffffff"
+              }
+            },
+            "@media (max-width: 992px)": {
+              "& when not (@fullScreen)": {
+                "padding-top": "(@paddingTop * 10px)",
+                "padding-bottom": "(@paddingBottom * 10px)"
+              },
+              ".box1": {
+                "margin-bottom": "1rem"
+              }
+            },
+            "@media (max-width: 576px)": {
+              "& when not (@fullScreen)": {
+                "padding-top": "(@paddingTop * 7px)",
+                "padding-bottom": "(@paddingBottom * 7px)"
+              },
+              ".box1, .box2": {
+                "height": "250px"
+              }
+            }
+          },
+          "_name": "extVideo2",
+          "_customHTML": "<section class=\"extVideo\" group=\"Additional Blocks\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" plugins=\"PlayerVimeo, pauseVideo\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"30\" step=\"1\" value=\"9\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"30\" step=\"1\" value=\"10\" condition=\"fullScreen == false\">\n        <input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Icon BG Color\" name=\"iconBGColor\" value=\"#7f1933\">\n        <input type=\"image\" name=\"video1\" value=\"@PROJECT_PATH@/assets/images/jij-bent-de-wet-1014x566.jpg\" title=\"Image 1\">\n        <input type=\"image\" name=\"video2\" value=\"@PROJECT_PATH@/assets/images/niks-meer-778x514.jpg\" title=\"Image 2\">\n        <input type=\"text\" title=\"Modal Video 1\" name=\"modalVideo\" value=\"https://www.youtube.com/watch?v=bK5U49sO05A\">\n        <input type=\"text\" title=\"Modal Video 2\" name=\"modalVideo2\" value=\"https://www.youtube.com/watch?v=yCvBSJVzqME\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/background3.jpg\" title=\"Background Image\">\n            <input type=\"color\" value=\"#efefef\" title=\"Background Color\" selected>\n            <input type=\"video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\" title=\"Background Video\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay&&bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-12 col-12 col-lg-6\">\n                <div class=\"box1\">\n                    <div class=\"mbr-media show-modal align-center py-2\" data-toggle=\"modal\" data-target=\".w1\">\n                        <div class=\"icon-wrap\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-play mobi-mbri\"></span>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"mbr-white col-md-12 col-12 col-lg-6\">\n                <div class=\"box2\">\n                    <div class=\"mbr-media show-modal align-center py-2\" data-toggle=\"modal\" data-target=\".w2\">\n                        <div class=\"icon-wrap\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-play mobi-mbri\"></span>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div>\n        <div class=\"modalWindow w1\" style=\"display: none;\">\n            <div class=\"modalWindow-container\">\n                <div class=\"modalWindow-video-container\">\n                    <div class=\"modalWindow-video\">\n                        <iframe width=\"100%\" height=\"100%\" data-src=\"{{modalVideo}}\" frameborder=\"0\" allowfullscreen=\"1\"></iframe>\n                    </div>\n                    <a class=\"close\" role=\"button\" data-dismiss=\"modal\">\n                        <span aria-hidden=\"true\" class=\"mbri-close mbr-iconfont closeModal\"></span>\n                        <span class=\"sr-only\">Close</span>\n                    </a>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"modalWindow w2\" style=\"display: none;\">\n            <div class=\"modalWindow-container\">\n                <div class=\"modalWindow-video-container\">\n                    <div class=\"modalWindow-video\">\n                        <iframe width=\"100%\" height=\"100%\" data-src=\"{{modalVideo2}}\" frameborder=\"0\" allowfullscreen=\"1\"></iframe>\n                    </div>\n                    <a class=\"close\" role=\"button\" data-dismiss=\"modal\">\n                        <span aria-hidden=\"true\" class=\"mbri-close mbr-iconfont closeModal\"></span>\n                        <span class=\"sr-only\">Close</span>\n                    </a>\n                </div>\n            </div>\n        </div>\n\n\n    </div>\n</section>",
+          "_cid": "sa1roqsq7E",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "extVideo2-5"
         },
         {
           "alias": "mobirise4-blocks/components",
